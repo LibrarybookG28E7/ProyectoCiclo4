@@ -1,0 +1,103 @@
+/* inicio header */
+.library{
+    width: 50%;
+          height: 200px;
+          background-color: #a8a9af; 
+}
+.navegador{
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 950px;
+    font-size: 22px
+    
+}
+.portada{
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.buscar{
+    position: relative;
+    padding: 30px;
+    margin-top: 10px;
+    margin-left: 450px;
+}
+
+.buscar input{
+    width:240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+
+.btn{
+    position: relative;
+    top: 0;
+    right: 0;
+    background: #440080;
+    width: 44px;
+    height: 41px;
+    line-height: 50px;
+    margin-top: -41px;
+    margin-left: 238px;
+    border-radius: 50px;
+}
+#lupa{
+    position: relative;
+    margin: 9px;
+    color: black;
+    color: #ffffff;
+}
+
+/* final header */
+
+/* inicio carrusel */
+
+.carrusel{
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: transparent;
+}
+
+img{
+    margin:0px;
+    padding:0px;
+    height:auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 200px;
+    border-radius:10px;
+}
+
+.servicios{
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        background-color: transparent;
+}
+
+
+
+
+
