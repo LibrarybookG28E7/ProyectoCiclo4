@@ -1,10 +1,23 @@
+const { request } = require("express");
+const UsersModel = require("../models/UsersModel");
 
 
 
 
-module.exports.postRegistrar = async (req, res) => {
-    console.log("postRegistrar");
-    res.send("postRegistrar");
+module.exports = class authController{
+    static async postRegistrar (req, res){
+
+        console.log("postRegistrar");
+        try {
+            console.log(req.body);
+            const document = req.body;
+            const user = await UsersModel.create(document);
+            res.status(201).json(user);
+        } catch (error) {
+            console.log(error);
+            res.status(400).json(error);
+        }
+    };
 };
 
 module.exports.postIniciarSesion = async (req, res) => {

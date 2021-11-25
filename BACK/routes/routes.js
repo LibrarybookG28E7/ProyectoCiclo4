@@ -9,7 +9,7 @@ router.get('/books/all', BooksController.getAll);
 
 //Rutas Users-------------------
 router.post('/users/new', UsersController.insertuser);
-
+router.post("/login", UsersController.login);
 //Rutas Borrows-----------------
 
 
