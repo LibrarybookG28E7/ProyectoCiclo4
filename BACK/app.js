@@ -2,19 +2,19 @@ require("dotenv").config();
 const express = require("express");
 const cors = require ("cors");
 const morgan = require ("morgan");
+const cookieParser = require ("cookie-parser");
 const mongoose = require("mongoose");
-const auhtRoutes = require("./routes/authRoutes");
 
 const port = process.env.PORT;
 
 
 
 const app = express();
-app.use("/auth",auhtRoutes);
 app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(cookieParser());
 
 //Rutas------------------------------------
 app.use('/api', require('./routes/routes'))
@@ -22,7 +22,7 @@ app.use('/api', require('./routes/routes'))
 
 //Servidor--------------------------------
 app.listen(port, () => {
-    console.log(`Servidor escuchanfo a traves de http://localhost:${port}`);
+    console.log(`Servidor escuchando a traves de http://localhost:${port}`);
 })
 
 //DB MONGO-----------------------------------
