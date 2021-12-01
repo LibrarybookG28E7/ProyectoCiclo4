@@ -2,7 +2,7 @@ import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 
-function Cards() {
+const Cards = () => {
   return (
     <div className='cards'>
       <h1>Libros disponibles</h1>
@@ -10,7 +10,7 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/el amor en los tiempos del colera.jpg'
+              src='images/elamorenlostiemposdelcolera.jpg'
               text='EL AMOR EN LOS TIEMPOS DEL COLERA'
               label='Drama'
               path='/libro1'
@@ -32,7 +32,7 @@ function Cards() {
           <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/el amor en los tiempos del colera.jpg'
+              src='images/elamorenlostiemposdelcolera.jpg'
               text='EL AMOR EN LOS TIEMPOS DEL COLERA'
               label='Drama'
               path='/libro1'
@@ -54,7 +54,7 @@ function Cards() {
           <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/el amor en los tiempos del colera.jpg'
+              src='images/elamorenlostiemposdelcolera.jpg'
               text='EL AMOR EN LOS TIEMPOS DEL COLERA'
               label='Drama'
               path='/libro1'

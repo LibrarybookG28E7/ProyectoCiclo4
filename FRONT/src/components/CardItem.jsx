@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function CardItem(props) {
+const CardItem = (props) => {
   return (
     <>
       <li className='cards__item'>
